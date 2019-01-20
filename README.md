@@ -4,8 +4,9 @@
 
 - Install dependencies running `npm install`.
 - Run it! `npm start`.
+- Go to localhost:3000/people to see the directory
 
-It will run a server listening at port `3000` exposing these endpoints:
+API Endpoints:
 
-- `GET /people`: It returns an array of people in the directory.
+- `GET /all-people`: It returns an array of people in the directory.
 - `GET /people/by-name/:name`: It returns people that have the given string in the first or last name.
