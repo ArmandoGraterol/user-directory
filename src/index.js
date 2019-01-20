@@ -4,6 +4,8 @@ const faker = require('faker');
 const PORT = 3000;
 const app = express();
 
+app.use("/public", express.static(__dirname + "/public"));
+
 let _people = [];
 const getPeople = () => {
   if (_people.length === 0) {
@@ -34,7 +36,9 @@ const findPeopleByName = (name) => {
   });
 };
 
-app.get('/people', (req, res) => res.send(getPeople()));
+app.get('/people', (req, res) => res.sendFile(__dirname + '/public/people.html'));
+
+app.get('/all-people', (req, res) => res.send(getPeople()));
 
 app.get('/people/by-name/:name', (req, res) => {
   const { name } = req.params;
