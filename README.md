@@ -4,7 +4,7 @@
 
 - Install dependencies running `npm install`.
 - Run it! `npm start`.
-- Go to localhost:3000/people to see the directory
+- Go to `localhost:3000/people` to see the directory
 
 API Endpoints:
 
