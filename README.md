@@ -2,8 +2,13 @@
 
 ## How to use it
 
-- Install dependencies running `npm install`.
-- Run it! `npm start`.
+- Clone the repo
+- Go to the project main folder
+- Install server dependencies running `npm install`.
+- Go to the `client` folder
+- Install client dependencies running `npm install`.
+- Go back to the project main folder
+- Run the client and server with `npm run dev`
 - Go to `localhost:3000/people` to see the directory
 
 API Endpoints:
